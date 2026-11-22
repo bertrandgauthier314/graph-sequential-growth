@@ -1,17 +1,17 @@
 """
-Experimental Workflows and Visualization Functions for Manuscript Figures
+Experimental Workflows and Visualisation Functions for Manuscript Figures
 
-This module gathers the parallelized Monte Carlo experimental pipelines and  
-plotting routines used to generate Figures 1 through 10 of the manuscript.
+This module gathers the parallelised Monte Carlo experimental pipelines and  
+plotting routines used to generate Figures 1-10 of the manuscript.
 
 Key Components
 --------------
 1. Core Benchmarking Infrastructure:
-   - full_ROC_comp        : Evaluates single-realization ROC and precision-recall (PR) curves.
+   - full_ROC_comp        : Evaluates one-sample ROC and precision-recall (PR) curves.
    - run_experiment_ROC   : Parallelised Monte Carlo benchmark across various sample sizes.
 
 2. Synthetic Benchmark Experiments & Figures:
-   - Figure 1             : Sparsity pattern panel alongside 2x3 ROC/PR grids for GSL, BBI, and BFCI.
+   - Figure 1             : Sparsity pattern panel alongside 2x3 ROC/PR grids for GS, GSL, BBI, and BFCI.
    - Figure 2             : 2x3 ROC/PR grid comparing GSL, GLasso, PCorr, and Prec.
    - Figure 3 (run/plot)  : True edge detection frequency and GSL false positive heatmap.
    - Figure 4 (run/plot)  : Activation rank boxplots for foremost and remaining true edges under full growth.
@@ -19,10 +19,10 @@ Key Components
    - Figures 6 & 7        : 4x4 PR curve grid across 4 network topologies (Random m=200, Random m=40, 
                             Clique m=225, Hub m=45) and various sample sizes.
 
-3. Empirical Data Experiments (Riboflavin / Gene Expression):
+3. Empirical Data Experiments (Riboflavin Data):
    - Figure 8 (run/plot)  : Rank stability boxplots for repeated subsample-based extractions.
-   - Figures 9 & 10       : Concentric "Galaxy" layout network visualizations for various edge counts,  
-                            presenting subsampling median activation ranks (Fig 9) with full dataset growth (Fig 10).
+   - Figures 9 & 10       : Concentric "Galaxy" layout network visualisations for various edge counts, 
+                            presenting subsampling median activation ranks (Fig 9) with full-dataset growth (Fig 10).
 """
 
 

@@ -1,5 +1,5 @@
 """
-Solvers and Utility Functions for graphical model recovery
+Solvers and Utility Functions for Graphical Model Recovery
 
 This file implements solvers and evaluation metrics 
 for sparse precision matrix estimation and graph structure recovery.
@@ -10,7 +10,7 @@ Key Components
    - GSL_solver   : GSL solver with approximate full correction (via support-restricted GSL)
    - BBI_solver   : BBI solver with approximate full correction (via support-restricted GSL)
    - BFCI_solver  : BFCI solver based on approximate full correction (via support-restricted GSL)
-   - GS_solver   : GS solver with approximate full correction (via support-restricted GSL)
+   - GS_solver    : GS solver with approximate full correction (via support-restricted GSL)
    
 
 2. Magnitude-Based Extraction:
@@ -21,10 +21,10 @@ Key Components
                   discretized lambda values (via gglasso ADMM).
 
 3. Utilities & Evaluation:
-   - prec_to_pcorr       : Transforms a precision matrix into partial correlations.
-   - compute_number_edges: Counts non-zero off-diagonal entries and extracts true edge indices.
-   - compute_ROC         : Calculates precision, recall, and false positive rate trajectories 
-                           from sequential edge activation outputs.
+   - prec_to_pcorr        : Transforms a precision matrix into partial correlations.
+   - compute_number_edges : Counts non-zero off-diagonal entries and extracts true edge indices.
+   - compute_ROC          : Calculates precision, recall, and false positive rate trajectories 
+                            from sequential edge activation outputs.
 """
 
 import sys
